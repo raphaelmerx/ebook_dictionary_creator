@@ -156,12 +156,12 @@ class DictionaryCreator:
         mobi_output_file_path: str = None,
     ):
         # if mobi path ends on .mobi, remove the ending
-        if mobi_temp_folder_path.lower().endswith(".mobi"):
-            mobi_temp_folder_path = mobi_temp_folder_path[:-4]
         if mobi_temp_folder_path == None:
             mobi_temp_folder_path = (
                 self.source_language + "_" + self.target_language
             )  # + ".mobi"
+        if mobi_temp_folder_path.lower().endswith(".mobi"):
+            mobi_temp_folder_path = mobi_temp_folder_path[:-4]
 
         if mobi_output_file_path == None:
             mobi_output_file_path = mobi_temp_folder_path + ".mobi"
