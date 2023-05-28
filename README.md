@@ -31,7 +31,7 @@ And then use it like this:
         # Currently only works for latin scripts.
         author="Vuizur",
         title="Czech to English dictionary",
-        mobi_path="Czech-English-dict",
+        mobi_output_file_path="Czech-English.mobi",
     )
     dict_creator.export_to_stardict("Vuizur", "Czech to English dictionary", "Czech-English-dict.ifo")  
 
